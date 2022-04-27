@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  font-family: inter, sans-serif;
+}
+
+.calculator {
+  width: 352px;
+  background: #292626;
+  padding: 42px 19px 0 19px;
+  border-radius: 40px;
+}
+
+.calculator__display {
+  width: 340px;
+  background: #292626;
+  border: 0;
+  height: 100px;
+  color: #FFFFFF;
+  font-size: 3rem;
+  text-align: right;
+}
+
+.calculator__display-input {
+  background: transparent;
+  outline: transparent;
+  height: 200px;
+}
+
+.calculator__display-result {
+  color: #969696;
+  font-size: 3rem;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.calculator__refresh {
+  margin-bottom: 10px;
+}
+
+.calculator__row {
+  width: 352px;
+  border: 1px solid #4E4D4D;
+  margin-bottom: 25px;
+}
+
+.calculator__buttons--button {
+  background: #343434;
+  width: 73px;
+  height: 75px;
+  border-radius: 9px;
+  color: #FFFFFF;
+  border: 0;
+  font-size: 2rem;
+}
+
+.calculator__buttons--button:hover {
+  background: black;
+}
+
+.calculator__buttons--button-background-red {
+  background: #FF5959;
+}
+
+.calculator__buttons--button-background-red:hover {
+  background: #bf0000;
+}
+
+.calculator__buttons--button-color-green {
+  color: #52DF68;
+}
+
+.calculator__buttons--button_color_light-black {
+  color: #343434;
+}
+
+.calculator__buttons--button-background-green {
+  background-color: #52DF68;
+}
+
+.calculator__buttons--button-background-green:hover {
+  background: #188028;
+}
+
+.calculator__wrapper-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background: #FFFFFF;
+  width: 135px;
+  height: 5px;
+  border-radius: 10px;
+  margin: 32px 0 13px 110px;
+}
+/*# sourceMappingURL=style.css.map */

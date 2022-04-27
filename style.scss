@@ -1,0 +1,97 @@
+@import "reset", "mixin";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: inter, sans-serif;
+}
+.calculator {
+    width: 352px;
+    background: $black;
+    padding: 42px 19px 0 19px;
+    border-radius: 40px;
+
+    &__display{
+        width: 340px;
+        background: $black;
+        border: 0;
+        height: 100px;
+        color: $white;
+        font-size: calcRem(48);
+        text-align: right;
+    }
+
+    &__display-input {
+        background: transparent;
+        outline: transparent;
+        height: 200px;
+    }
+
+    &__display-result {
+        color: $lightGray;
+        font-size: calcRem(48);
+        text-align: right;
+        margin-top: 20px;
+    }
+    &__refresh {
+        margin-bottom: 10px;
+    }
+    &__row {
+        width: 352px;
+        border: 1px solid $rowColor;
+        margin-bottom: 25px;
+    }
+
+    &__buttons {
+        &--button {
+            background: $lightBlack;
+            width: 73px;
+            height: 75px;
+            border-radius: 9px;
+            color: $white;
+            border: 0;
+            font-size: calcRem(32);
+
+            &:hover {
+                background: darken($color: $lightBlack, $amount: 30%);
+            }
+        }
+        &--button-background-red {
+            background: $red;
+
+            &:hover {
+                background: darken($color: $red, $amount: 30%);
+            }
+        }
+        &--button-color-green {
+            color: $green;
+        }
+        &--button_color_light-black{
+            color: $lightBlack;
+        } 
+        &--button-background-green {
+            background-color: $green;
+
+            &:hover {
+                background: darken($color: $green, $amount: 30%);
+            }
+        }
+    }
+    
+    &__wrapper-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }}
+
+.footer {
+    background: $white;
+    width: 135px;
+    height: 5px;
+    border-radius: 10px;
+    margin: 32px 0 13px 110px;
+}
